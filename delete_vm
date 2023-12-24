@@ -1,0 +1,14 @@
+gnome-boxes
+  
+#list all VM
+virsh list --all
+
+ #list all snapshot 
+virsh snapshot-list --domain centos-strea-3  
+
+#delete snapshot  
+virsh snapshot-delete --domain centos-strea-3 --snapshotname 2023-12-24-18-05-32
+
+#delete VM  
+virsh undefine centos-strea-3
+  
